@@ -14,6 +14,7 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+//Inspired & used code from from https://github.com/miho
 
 public class Test extends Application {
     
@@ -56,9 +57,7 @@ public class Test extends Application {
         node.setCenterX(Math.random() * scene.getWidth());
         node.setCenterY(Math.random() * scene.getHeight());
         
-
         container.getChildren().add(node);
-
 
         Timeline timeline = new Timeline(
                 new KeyFrame(
