@@ -31,7 +31,7 @@ public class Test extends Application {
         container.setId("pane");
         rootPane.getChildren().add(container);
 
-        Scene scene = new Scene(rootPane, 2000, 1200);
+        Scene scene = new Scene(rootPane, 1200, 800);
         
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         
