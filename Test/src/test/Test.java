@@ -31,15 +31,15 @@ public class Test extends Application {
         container.setId("pane");
         rootPane.getChildren().add(container);
 
-        Scene scene = new Scene(rootPane, 1280, 800);
+        Scene scene = new Scene(rootPane, 2000, 1200);
         
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        
         int spawnNodes = 700;
 
         for (int i = 0; i < spawnNodes; i++) {
             spawnNode(scene, container);
         }
-
 
         primaryStage.setTitle("$100,00");
         primaryStage.setScene(scene);
@@ -80,7 +80,6 @@ public class Test extends Application {
 
         timeline.setCycleCount(1);
         
-
         timeline.setOnFinished(evt -> {
             container.getChildren().remove(node);
             spawnNode(scene, container);
