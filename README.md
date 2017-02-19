@@ -1,2 +1,2 @@
 # Test
-First JavaFX Programm. Enjoy!
+First JavaFX Program. Enjoy!
